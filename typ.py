@@ -31,10 +31,8 @@ async def on_message(message):
         imgUrl = 'https://www.weather.go.kr' + soup.find("img")["src"]
 
         typoonEmbed = discord.Embed(title='천리안 2A호 위성사진', description='제공: 기상청', colour=discord.Colour.dark_grey())
-        loading = await message.channel.send('위성사진을 불러오는중입니다...')
-        await loading.delete()
+        typoonEmbed.set_image(url=imgUrl)
         await message.channel.send(embed=typoonEmbed)
-        await message.channel.send(imgUrl)
 
 
 client.run('★TOKEN★')

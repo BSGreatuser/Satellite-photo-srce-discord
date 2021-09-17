@@ -1,9 +1,4 @@
 
-###################
-####python 3.x#####
-#discord.py==1.4.0#
-###################
-
 #위성사진 제공 : https://www.weather.go.kr (기상청)
 
 import discord
